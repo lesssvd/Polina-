@@ -11,9 +11,9 @@ float y0 = 2.0, y1 = 4.0;
 				float u1 = exp(2.0*xn) + log10(xn);
 				float u2 = sin(-(1-fabs(xn-yn))/cbrt(xn));
 				if (u1<=u2){
-					printf ("U = %f\n", u1);
-				} else {
 					printf ("U = %f\n", u2);
+				} else {
+					printf ("U = %f\n", u1);
 				}
 			} else {
 				printf ("U = %f\n", cos((xn*xn)- yn) * cos((xn*xn)-yn));
